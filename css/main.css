@@ -12,6 +12,7 @@
 
 body {
     margin: 0;
+    margin-bottom: 20%;
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
@@ -130,10 +131,13 @@ form {
 
 .todo-list {
     --spacer: 2rem;
-
     grid-area: active;
-    background: var(--clr-light);
+    /* background: var(--clr-light); */
     color: var(--clr-dark);
+}
+
+.todo-body {
+    background: var(--clr-light);
 }
 
 .todo-header {
@@ -200,7 +204,7 @@ form {
 
 .task:hover .custom-checkbox,
 [type="checkbox"]:focus + label .custom-checkbox {
-    color: var(--clr-primary)
+    color: var(--clr-primary);
 }
 
 [type="checkbox"]:checked + label .custom-checkbox {
@@ -242,7 +246,7 @@ form {
     width: 100%;
     left: 0;
     bottom: -35px;
-    color: var(--clr-light)
+    color: var(--clr-light);
 }
 
 .btn.delete {
